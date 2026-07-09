@@ -10,6 +10,8 @@
     - Fips: Equivalente de resistencia para habilidades de tipo mutacion.
     - Fuerza: Modifica el daño que se hace con armas cuerpo a cuerpo, tambien requerido para ciertas acciones.
     - Defensa: Modifica el daño recibido, principalmente interactua con los equipamientos, dependiendo lo que vista el daño que recibe.
+    - Hambre: Va a aumentar con el tiempo, las comidas lo reducen, tener un nivel de hambre alto va a reducir la fuerza y la defensa. Eventualmente, si se encuentra en valores demasiado elevados va a reducir un % de vida del personaje cada cierto tiempo.
+    - Sed: Va a aumentar con el tiempo, las bebidas lo reducen, tener un nivel de sed alto va a reducir la resistencia. Eventualmente, al igual que el hambre, mantener un valor elevado va a reducir la vida.
     
     Estos son los definidos iniciales, pero es muy problable que se agreguen mas.
     Todos los atributos pueden variar su valor durante el juego, por cambios de equipamientos, uso de items consumibles, etc.
