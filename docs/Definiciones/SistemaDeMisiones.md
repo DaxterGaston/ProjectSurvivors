@@ -7,6 +7,9 @@ Se explican las caracteristicas del Sistema de Misiones, este sistema forma part
 - ### Misiones Primarias:
     Son las misiones que dan curso a la historia. Las misiones tienen un numero de orden y cada una depende de su predecesora, en el caso de las misiones que comparten un mismo numero de orden son misiones bloqueantes entre sí. Es decir, cuando se desbloquea ese bloque de misiones el jugador debera decidir cual es la que va a hacer. Estas misiones siempre van a tener un impacto en la historia principal, así como también pueden hacerle un aporte al jugador. _Ejemplo_: desbloquear una habilidad o darle algun item.
 
+- ### Misiones de bloque:
+    Pertenecen a las misiones primarias, pero tienen un comportamiento distinto. Se tienen que hacer durtante el transcurso de un bloque de misiones pertenecientes a la historia, y bloquean otras partes de la historia. _Ejemplo_: Podes hacer de las misiones 1 a la 20 de la historia, pero para la 21 tenes 2 requerimientos de desbloqueo: Terminar la mision primaria 20 y la de bloque 1. En el transcurso de la 1 a la 20 el jugador puede hacer la mision de bloque 1 en el momento que quiera.
+
 - ### Misiones Secundarias: 
     Son misiones opcionales. El jugador puede o no hacerlas. Siempre va a complementar la historia o a hacerle un aporte al jugador, igual que las misiones primarias.
     Estas pueden o no estar bloqueadas por otras misiones (pueden ser primarias o secundarias), a diferencia de las primarias pueden depender de otros factores para que la mision se habiliten. _Ejemplo_: Tener cierto nivel en algun atributo/Llevar + de X horas de partida/Encontrar cierto item especial.
