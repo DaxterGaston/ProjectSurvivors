@@ -28,6 +28,15 @@ Cada documento de crunching debe funcionar como referencia viva de decisiones de
 - No mezclar en profundidad decisiones de otros módulos salvo para dejar dependencias, supuestos o límites explícitos.
 - Cuando aparezcan temas que pertenecen a otro documento, registrarlos como dependencia o frontera, no resolverlos por completo fuera de su sesión correspondiente.
 
+## División en documento general y documento de modding
+
+- Si el sistema trabajado en la sesión tiene partes moddeables (extension points, resource types, reglas de patch/override, etc.), la sesión debe producir **dos documentos** en `docs/Crunching`, no uno solo:
+  - `<Sistema>.md`: decisiones generales de diseño/producto del sistema, sin profundizar en modding.
+  - `<Sistema>_Modding.md`: decisiones específicas de modding del sistema (resource types nuevos, extension points, reglas de patch/override/visibilidad propias del sistema), apoyándose en el estándar ya cerrado en [Modding.md](./Modding.md).
+- Ejemplo: la sesión sobre `CaracteristicasPersonaje` produce `CaracteristicasPersonaje.md` y `CaracteristicasPersonaje_Modding.md`.
+- Si el sistema no tiene partes moddeables, alcanza con un único documento `<Sistema>.md`.
+- Ambos documentos deben enlazarse entre sí (el general referencia al de modding y viceversa), y el de modding debe enlazar a `Modding.md` como estándar base.
+
 ## Objetivo editorial
 
 - Los documentos de `docs/Crunching` deben leerse como una red coherente de definiciones refinadas.
