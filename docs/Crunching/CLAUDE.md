@@ -1,4 +1,4 @@
-# AGENTS
+# Directorio de resultado de sesiones de Crunching
 
 ## Propósito
 

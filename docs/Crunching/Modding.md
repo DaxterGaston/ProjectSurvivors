@@ -389,6 +389,7 @@ Lista inicial extensible:
 - `itemDefinition`
 - `recipeDefinition`
 - `characterAttributeDefinition`
+- `characterCapacityDefinition`
 - `characterTraitDefinition`
 - `skillDefinition`
 - `missionDefinition`
@@ -409,6 +410,8 @@ Lista inicial extensible:
 - `profileDefinition` (contenido de `profile.json`: historia referenciada, mods con version exacta, bloque de configuracion)
 
 Que tipos entran realmente al MVP **no se decide en este crunching**: es una decision de alcance de producto por sistema (items, misiones, NPCs, etc.) que se resuelve en el crunching especifico de cada uno, porque el modding de cada sistema tiene logica propia (no es lo mismo modear un vehiculo que rutinas automatizadas de NPC). Lo que este documento cierra es el *mecanismo* de habilitacion (registro versionado en la Modding API con su propio schema), no la lista final.
+
+El sistema de personaje (Atributos, Capacidades, Rasgos, Habilidades) ya resolvio su primer set de resource types y extension points en [CaracteristicasPersonaje_Modding.md](./CaracteristicasPersonaje_Modding.md). El sistema de NPCs ya resolvio el suyo (`npcArchetypeDefinition`, `npcOrderDefinition`, `npcTaskDefinition`) en [NPCs_Modding.md](./NPCs_Modding.md).
 
 Los schemas finos de cada tipo se definen en los crunchings especificos de cada sistema.
 
@@ -761,8 +764,8 @@ Motivo: evita que la documentacion se desincronice del contrato real (mismo prob
 
 - Como se muestra el gestor de almacenamiento en UI (decision de UI/UX, no de arquitectura).
 - Mecanismo de resolucion de override entre configuraciones agregadas por distintos mods (pertenece al crunching del sistema de configuracion).
-- Que resource types entran realmente en el primer MVP de cada sistema (items, misiones, NPCs, mapa, comunidades, habilidades, vehiculos, etc.) — a resolver en el crunching especifico de cada uno.
-- Primer set de extension points concreto por sistema.
+- Que resource types entran realmente en el primer MVP de cada sistema (items, misiones, mapa, comunidades, vehiculos, etc.) — a resolver en el crunching especifico de cada uno. Personaje (atributos/capacidades/rasgos/habilidades) ya resuelto, ver [CaracteristicasPersonaje_Modding.md](./CaracteristicasPersonaje_Modding.md). NPCs ya resuelto, ver [NPCs_Modding.md](./NPCs_Modding.md).
+- Primer set de extension points concreto por sistema (personaje y NPCs ya resueltos, resto pendiente).
 - Modelo de permisos/capabilities especifico si en el futuro se habilita el `Unity Modding Package` (prefabs/escenas/shaders).
 
 ## Resultado esperado de este documento

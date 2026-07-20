@@ -275,11 +275,10 @@ El juego debe incluir interfaz para:
 ### Límite de este documento
 
 - Este crunching no define en detalle:
-  - progresión del personaje
-  - sistema de habilidades
+  - progresión del personaje ni sistema de habilidades — ver [CaracteristicasPersonaje.md](./CaracteristicasPersonaje.md)
   - estructura de misiones
   - algoritmo de generación de mapa
-  - comportamiento de NPCs
+  - comportamiento de NPCs — ver [NPCs.md](./NPCs.md)
   - gestión de comunidades
   - diseño de construcción
   - reglas finas de PvP
